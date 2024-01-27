@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 1</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="container">
+        <div id="side-menu">
+            <a href="lop3/gtl3.html">Giải Toán lớp 3</a>
+            <a href="lop3/gvbtt3.html">Giải Vở bài tập Toán lớp 3</a>
+            <a href="lop3/gtv3.html">Giải Tiếng Việt lớp 3</a>
+            <a href="lop3/gvbttv3.html">Giải Vở bài tập Tiếng Việt lớp 3</a>
+            <a href="lop3/gdd3.html">Giải Đạo đức lớp 3</a>
+            <a href="lop3/gth3.html">Giải Tin học lớp 3</a>
+   
+            <a href="lop3/ghdtn3.html">Giải Hoạt động trải nghiệm lớp 3</a>
+        
+          <p href="#">LỚP 3 - CHÂN TRỜI SÁNG TẠO</p>
+       
+          <a href="lop3/gtl3 st.html">Giải Toán lớp 3</a>
+          <a href="lop3/gvbtt3 st.html">Giải Vở bài tập Toán lớp 3</a>
+          <a href="lop3/gtv3 st.html">Giải Tiếng Việt lớp 3</a>
+          <a href="lop3/gvbttv3 st.html">Giải Vở bài tập Tiếng Việt lớp 3</a>
+          <a href="lop3/gdd3 st.html">Giải Đạo đức lớp 3</a>
+          <a href="lop3/gth3 st.html">Giải Tin học lớp 3</a>
+          
+          <a href="lop3/ghdtn3 st.html">Giải Hoạt động trải nghiệm lớp 3</a>
+          <a href="lop3/gtnxh3 st.html">Giải Tự nhiên xã hội lớp 3</a>
+      
+          <p href="#">LỚP 3 - CÁNH DIỀU</p>
+       
+          <a href="lop3/gtl3 cd.html">Giải Toán lớp 3</a>
+          <a href="lop3/gvbtt3 cd.html">Giải Vở bài tập Toán lớp 3</a>
+          <a href="lop3/gtv3 cd.html">Giải Tiếng Việt lớp 3</a>
+          <a href="lop3/gvbttv3 cd.html">Giải Vở bài tập Tiếng Việt lớp 3</a>
+          <a href="lop3/gdd3 cd.html">Giải Đạo đức lớp 3</a>
+          <a href="lop3/gth3 cd.html">Giải Tin học lớp 3</a>
+         
+          <a href="lop3/ghdtn3 cd.html">Giải Hoạt động trải nghiệm lớp 3</a>
+          <a href="cgtnxh3 cd.html">Giải Tự nhiên xã hội lớp 3</a>
+           
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () {
+            // Get the header and side menu elements
+            var header = document.getElementById("header");
+            var sideMenu = document.getElementById("side-menu");
+
+            // Get the distance from the top of the document to the scroll position
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Stick the side menu to the header when scrolling down
+            if (scrollPosition >= 60) {
+                sideMenu.style.top = "0";
+            } else {
+                sideMenu.style.top = "60px";
+            }
+        };
+    </script>
+
+
+
+
+    <my-navbar></my-navbar>

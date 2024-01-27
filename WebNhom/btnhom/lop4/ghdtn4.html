@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 1</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <my-navbar></my-navbar>
+    <div id="container">
+        <div id="side-menu">
+            <p href="#">LỚP 4 - KẾT NỐI TRI THỨC</p>
+
+            <a href="gt4.html">Giải Toán lớp 4</a>
+            <a href="gvbtt4.html">Giải Vở bài tập Toán lớp 4</a>
+            <a href="gtv4.html">Giải Tiếng Việt lớp 4</a>
+            <a href="gvbttv4.html">Giải Vở bài tập Tiếng Việt lớp 4</a>
+            <a href="gdd4.html">Giải sgk Đạo đức lớp 4</a>
+            <a href="gkh4.html">Giải Khoa học lớp 4</a>
+            <a href="glsdl4.html">Giải Lịch Sử và Địa Lí lớp 4</a>
+            <a href="ghdtn4.html">Giải Hoạt động trải nghiệm lớp 4</a>
+            <a href="gth4.html">Giải Tin học lớp 4</a>
+            <a href="gcn4.html">Giải Công nghệ lớp 4</a>
+
+            <p href="#">LỚP 4 - CHÂN TRỜI SÁNG TẠO</p>
+
+            <a href="gt4 st.html">Giải Toán lớp 4</a>
+            <a href="gvbtt4 st.html">Giải Vở bài tập Toán lớp 4</a>
+            <a href="gtv4 st.html">Giải Tiếng Việt lớp 4</a>
+            <a href="gvbttv4 st.html">Giải Vở bài tập Tiếng Việt lớp 4</a>
+            <a href="gdd4 st.html">Giải sgk Đạo đức lớp 4</a>
+            <a href="gkh4 st.html">Giải Khoa học lớp 4</a>
+            <a href="glsdl4 st.html">Giải Lịch Sử và Địa Lí lớp 4</a>
+            <a href="ghdtn4 st.html">Giải Hoạt động trải nghiệm lớp 4</a>
+            <a href="gth4 st.html">Giải Tin học lớp 4</a>
+            <a href="gcn4 st.html">Giải Công nghệ lớp 4</a>
+
+            <p href="#">LỚP 4 - CÁNH DIỀU</p>
+
+            <a href="gt4 cd.html">Giải Toán lớp 4</a>
+            <a href="gvbtt4 cd.html">Giải Vở bài tập Toán lớp 4</a>
+            <a href="gtv4 cd.html">Giải Tiếng Việt lớp 4</a>
+            <a href="gvbttv4 cd.html">Giải Vở bài tập Tiếng Việt lớp 4</a>
+            <a href="gdd4 cd.html">Giải sgk Đạo đức lớp 4</a>
+            <a href="gkh4 cd.html">Giải Khoa học lớp 4</a>
+            <a href="glsdl4 cd.html">Giải Lịch Sử và Địa Lí lớp 4</a>
+            <a href="ghdtn4 cd.html">Giải Hoạt động trải nghiệm lớp 4</a>
+            <a href="gth4 cd.html">Giải Tin học lớp 4</a>
+            <a href="gcn4 cd.html">Giải Công nghệ lớp 4</a>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () {
+            // Get the header and side menu elements
+            var header = document.getElementById("header");
+            var sideMenu = document.getElementById("side-menu");
+
+            // Get the distance from the top of the document to the scroll position
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Stick the side menu to the header when scrolling down
+            if (scrollPosition >= 60) {
+                sideMenu.style.top = "0";
+            } else {
+                sideMenu.style.top = "60px";
+            }
+        };
+    </script>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        display: block;
+    }
+
+    .left_right_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonTruoc, .buttonSau {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.buttonLike, .buttonShare {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+</style>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 1</title>
+    <style>
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .content-section {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .week {
+            margin-bottom: 20px;
+        }
+
+        .week h2 {
+            color: #00008B; /* Dark blue */
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .week p {
+            color: #000;
+            font-size: 18px;
+        }
+
+        /* Additional styling to replicate the provided image structure */
+        .week-columns {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .week {
+            width: 45%; /* Adjust the width as necessary */
+        }
+
+
+        .content-section {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .column{
+          list-style: none;
+        }
+        .learning-materials .columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .learning-materials .column {
+        width: 48%; /* Chỉnh lại kích thước nếu cần */
+    }
+
+    .comment-section {
+        margin-top: 20px;
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .comment-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .comment-box {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .comment-avatar, .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .comment-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        outline: none;
+    }
+    
+    .user-comment {
+        display: flex;
+        align-items: start;
+    }
+    
+    .comment-content {
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .comment-actions span {
+        font-size: 0.8rem;
+        color: #555;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .facebook-plugin {
+        margin-top: 15px;
+        font-size: 0.8rem;
+        color: #555;
+    }
+.content-with-sidebar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px; 
+}
+
+.content-section {
+    flex-grow: 1; 
+    padding-right: 20px; 
+}
+
+.right-sidebar {
+    flex-basis: 250px; 
+    height: auto; 
+    margin-left: 20px; 
+    position: relative; 
+    top: unset;
+    bottom: unset;
+    z-index: 1;
+}
+li {
+        list-style-type: none;
+    }
+  
+
+.left_right_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttonTruoc, .buttonSau {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .buttonLike, .buttonShare {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .like_share_wrapper {
+            display: flex;
+            margin-right: auto; 
+            margin-left: -5px; 
+        }
+
+        .buttonTruoc {
+            margin-right: 0; 
+        }
+
+        .buttonLike {
+            margin-right: 5px; 
+        }
+
+        .buttonShare {
+            margin-right: 20px; 
+        }
+
+        .bottom_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_buttons .buttonTruoc, .bottom_buttons .buttonSau {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}  
+
+
+
+.content_area {
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+.content_area h2 {
+    font-size: 1.5em; 
+    color: #333; 
+}
+
+.content_area p {
+    font-size: 1em; 
+    color: #666; 
+}
+
+.content_area ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+.content_area li {
+    padding: 5px 0; 
+}
+
+.custom-link {
+    text-decoration: none; 
+    color: #000000; 
+   
+}
+
+.custom-link:hover {
+    text-decoration: underline; 
+    
+}
+.text-content h2 {
+    font-size: 18px; 
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 15px; 
+}
+
+.text-content ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.text-content li {
+    margin-bottom: 5px; 
+}
+
+.custom-link {
+    text-decoration: none; 
+    color: #0000EE; 
+    font-size: 16px;
+}
+
+.custom-link:hover {
+    text-decoration: underline; 
+}
+  
+h2 {
+    font-size: 24px;
+    color: #00008B; /* Dark blue */
+    margin: 10px 0;
+}
+.ad-item {
+    text-align: center; 
+}
+
+.ad-item img,
+.ad-item video {
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+.ad-item a {
+    display: block;
+    margin-top: 10px; 
+    text-decoration: none; 
+    color: #000; 
+    font-size: 1em; 
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video-container iframe {
+    margin: auto;
+    display: block;
+}
+#backToTopBtn {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      #backToTopBtn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+</head>
+
+<body>
+    <my-navbar></my-navbar> 
+    <button id="backToTopBtn" title="Go to top">⬆️</button>
+
+
+    <div id="side-menu">
+        <a class="not-hover_allpage">KẾT NỐI TRI THỨC</a>
+        <a href="gtl2.html">Giải Toán lớp 2</a>
+        <a href="gvbtt2.html">Giải Vở bài tập Toán 2</a>
+        <a href="gtv2.html">Giải Tiếng Việt lớp 2</a>
+        <a href="gvbttv2.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="gta.html">Giải Tiếng Anh lớp 2</a>
+        <a href="gtnxh2.html">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="gdd2.html">Giải Đạo Đức lớp 2</a>
+        <a href="gvbtdd2.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+        <a href="gvbthdtn2.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+        <a href="ghdtn2.html">Giải Hoạt động trải nghiệm lớp 2</a>
+
+        <a class="not-hover_allpage" style="margin-top: 0px;margin-bottom: 0px;">CHÂN TRỜI SÁNG TẠO</a>
+        <a href="gtl2 st.html">Giải Toán lớp 2</a>
+        <a href="gvbtt2 st.html">Giải Vở bài tập Toán 2</a>
+        <a href="gtv2 st.html">Giải Tiếng Việt lớp 2</a>
+        <a href="gvbttv2 st.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="gta st.html">Giải Tiếng Anh lớp 2</a>
+        <a href="gtnxh2 st.html">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="gdd2 st.html">Giải Đạo Đức lớp 2</a>
+        <a href="gvbtdd2 st.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+        <a href="gvbthdtn2 st.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+        <a href="ghdtn2 st.html">Giải Hoạt động trải nghiệm lớp 2</a>
+        <a href="gan2 st.html">Giải Âm nhạc lớp 2</a>
+        
+        <a class="not-hover_allpage" style="margin-top: 0px;margin-bottom: 0px;">CÁNH DIỀU</a>
+        <a href="gtl2 cd.html">Giải Toán lớp 2</a>
+        <a href="gvbtt2 cd.html">Giải Vở bài tập Toán 2</a>
+        <a href="gtv2 cd.html">Giải Tiếng Việt lớp 2</a>
+        <a href="gvbttv2 cd.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="gta cd.html">Giải Tiếng Anh lớp 2</a>
+        <a href="gtnxh2 cd.html">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="gdd2 cd.html">Giải Đạo Đức lớp 2</a>
+        <a href="gvbtdd2 cd.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+        <a href="gvbthdtn2 cd.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+        <a href="ghdtn2 cd.html">Giải Hoạt động trải nghiệm lớp 2</a>
+        <a href="gan2 cd.html">Giải Âm nhạc lớp 2</a>
+</div>
+
+    <div id="main-content">
+        <h1>
+         
+        </h1>
+        <hr>
+        <div class="left_right_button">
+            <button class="buttonTruoc">Trang trước</button>
+            <div class="like_share_wrapper">
+                <button class="buttonLike"><i class="fas fa-thumbs-up"></i> Thích</button>
+    <button class="buttonShare"><i class="fab fa-facebook-f"></i> Chia sẻ</button>
+            </div>
+            <button class="buttonSau">Trang sau </button>
+        </div>
+        
+        <hr>
+        
+
+        <div class="menu">
+          <li> <a href="gvbt1.kntt.html"> Giải vở bài tập Tiếng Việt 1 </a></li>
+          <li> <a href="gvbt1.kntt.html"> Bài tập Tiếng Việt lớp 1( Buổi học 2) </a></li>
+          <li> <a href="gvbt1.kntt.html"> Bài tập Tiếng Việt lớp 1 -CTST </a></li>
+          <li> <a href="gvbt1.kntt.html"> Bài tập Tiếng Việt lớp 1-CD </a></li>
+      </div>
+        
+        
+
+    <div class="content-with-sidebar">
+        <div class="content-section">
+            <h1>Giải Tiếng Việt lớp 1 Tập 1 (Dành cho buổi học thứ hai)</h1>
+            <div class="week-columns">
+                <div class="week">
+                    <h2>Tuần 1</h2>
+                    <p>Tiết 1 A a B b (trang 5, 6)</p>
+                    <p>Tiết 2 C c ' E e E e (trang 6, 7)</p>
+                    <p>Tiết 3 Ôn tập (trang 8)</p>
+                </div>
+                <div class="week">
+                    <h2>Tuần 3</h2>
+                    <p>Tiết 1 I i K k H h L l (trang 13, 14)</p>
+                    <p>Tiết 2 U u Ư ư Ch ch Kh kh (trang 14, 15)</p>
+                    <p>Tiết 3 Ôn tập (trang 16)</p>
+                </div>
+            </div>
+            <div class="week-columns">
+                <div class="week">
+                    <h2>Tuần 2</h2>
+                    <p>Tiết 1 O o Ơ ơ (trang 9, 10)</p>
+                    <p>Tiết 2 D d Đ đ Ư ư (trang 10, 11)</p>
+                    <p>Tiết 3 Ôn tập (trang 12)</p>
+                </div>
+                <div class="week">
+                    <h2>Tuần 4</h2>
+                    <p>Tiết 1 M m N n Ng ng Gi gi (trang 17, 18)</p>
+                    <p>Tiết 2 Gh gh Nh nh Ng ng Ngh ngh (trang 18, 19)</p>
+                    <p>Tiết 3 Ôn tập (trang 20)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="ad-item">
+                <a href="https://www.facebook.com/clbchiasekienthuc/?locale=vi_VN">"Câu Lạc Bộ Học Thuật: Chia Sẻ Kiến Thức, Nâng Tầm Tương Lai"</a>
+                <video controls autoplay loop muted>
+                    <source src="../images/video1.mp4" type="video/mp4">
+                   
+                </video>
+            </div>
+            <div class="ad-item">
+                <a href="https://tuoitre.vn/3-dot-pha-tri-tue-nhan-tao-dang-so-nhat-nam-2024-20240102090331002.htm">"Trí Tuệ Tập Thể: Khám Phá, Học Hỏi và Tạo Đột Phá"
+                </a>
+
+                <video controls autoplay loop muted>
+                    <source src="../images/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="ad-item">
+                <a href="https://pace.edu.vn/tin-kho-tri-thuc/ky-nang-lam-viec-nhom">KỸ NĂNG LÀM VIỆC NHÓM LÀ GÌ? CÁCH LÀM VIỆC NHÓM HIỆU QUẢ
+                </a>
+
+                <video controls autoplay loop muted>
+                    <source src="../images/video3.mp4" type="video/mp4">
+                </video>
+            </div>
+         
+        </div>  
+    </div>
+
+
+    <div class="learning-materials">
+        <h2>Tài liệu để học tốt các môn học lớp 1 hay khác:</h2>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="#">Bộ đề thi Toán lớp 1 (có đáp án)</a></li>
+                    <li><a href="#">Bộ đề thi Tiếng Anh lớp 1 (có đáp án)</a></li>
+                    <li><a href="#">Giải bài tập sgk Toán lớp 1 - KNTT</a></li>
+                    <li><a href="#">Giải Vở bài tập Toán lớp 1 - KNTT</a></li>
+                    <li><a href="#">Giải Vở bài tập Toán lớp 1 - CTST</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Giải bài tập sgk Toán lớp 1 - Cánh diều</a></li>
+                    <li><a href="#">Giải Vở bài tập Toán lớp 1 - Cánh diều</a></li>
+                    <li><a href="#">Giải Vở bài tập Tiếng Việt lớp 1 - CTST</a></li>
+                    <li><a href="#">Giải Vở bài tập Tiếng Việt lớp 1 - Cánh diều</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- nhúng video trang -->
+     <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/COfrDO4lV-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
+
+
+
+    <div class="left_right_button">
+        <button class="buttonTruoc">Trang trước</button>
+        <div class="like_share_wrapper">
+            <button class="buttonLike"><i class="fas fa-thumbs-up"></i> Thích</button>
+<button class="buttonShare"><i class="fab fa-facebook-f"></i> Chia sẻ</button>
+        </div>
+        <button class="buttonSau">Trang sau</button>
+    </div>
+
+
+    
+    
+      
+
+        <div class="comment-section">
+            <div class="comment-header">
+                <span>1 bình luận</span>
+                <div class="sort-options">
+                    Sắp xếp theo <select>
+                        <option value="newest">Mới nhất</option>
+                        <option value="oldest">Cũ nhất</option>
+                    </select>
+                </div>
+            </div>
+            <div class="comment-box">
+                <img src="../images/cat.jpg" alt="Avatar" class="comment-avatar">
+                <textarea class="comment-input" placeholder="Viết bình luận..."></textarea>
+            </div>
+            <div class="user-comment">
+                <img src="../images/user.png" alt="User Avatar" class="user-avatar">
+                <div class="comment-content">
+                    <strong>Nguyễn Đức Cường</strong>
+                    <p>bo</p>
+                    <div class="comment-actions">
+                        <span>Thích</span> · <span>Phản hồi</span> · <span>7 tuần</span>
+                    </div>
+                </div>
+            </div>
+            <div class="facebook-plugin">
+                <span>Plugin bình luận trên Facebook</span>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+      
+    <script>
+          document.getElementById('backToTopBtn').addEventListener('click', function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    var backToTopBtn = document.getElementById('backToTopBtn');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+    </script>
+
+
+   <!-- tạo chatbot tư vấn khách hàng -->
+<script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2097951-OQDFEAWR2H9I466A/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+    </script>
+
+<!-- tự động focus ở thanh searchBar -->
+<script>
+
+    // Đối tượng cha chứa các hàm tái sử dụng
+  var FocusUtility = {
+      focusOnElement: function(selector) {
+          var element = document.querySelector(selector);
+          if (element) {
+              element.focus();
+          }
+      }
+  };
+  
+  // Sử dụng đối tượng cha để focus vào phần tử khi trang tải xong
+  window.onload = function() {
+      FocusUtility.focusOnElement('#custom-search-input');
+  };
+    
+   </script></body>
+
+</html>
+
+

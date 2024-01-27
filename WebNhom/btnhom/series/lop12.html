@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 12</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <my-navbar></my-navbar> 
+    <div id="side-menu">
+        <p>Danh mục các lớp </p>
+        <a href="../series/lop1.html">Lớp 1 </a>
+        <a href="  ../series/lop2.html">Lớp 2</a>
+        <a href="  ../series/lop3.html">Lớp 3</a>
+        <a href="  ../series/lop4.html">Lớp 4</a>
+        <a href=" ../series/lop5.html">Lớp 5</a>
+        <a href="  ../series/lop6.html">Lớp 6</a> 
+        <a href="  ../series/lop7.html">Lớp 7</a>
+        <a href=" ../series/lop8.html">Lớp 8</a>
+        <a href=" ../series/lop9.html">Lớp 9</a>
+        <a href="  ../series/lop10.html">Lớp 10</a> 
+        <a href="  ../series/lop11.html">Lớp 11</a> 
+        <a href="  ../series/lop12.html">Lớp 12</a>
+        <a href="  ../series/giaovien.html">Giáo viên </a>
+    </div>
+    <script>
+        window.onscroll = function() {
+          // Get the header and side menu elements
+          var header = document.getElementById("header");
+          var sideMenu = document.getElementById("side-menu");
+    
+          // Get the distance from the top of the document to the scroll position
+          var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    
+          // Stick the side menu to the header when scrolling down
+          if (scrollPosition >= 60) {
+            sideMenu.style.top = "0";
+          } else {
+            sideMenu.style.top = "70px";
+          }
+        };
+      </script>
+</body>
+</html>

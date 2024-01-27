@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 1</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="container">
+        <div id="side-menu">
+            <P>KẾT NỐI TRI THỨC</P>
+            <a href="gtl2.html">Giải Toán lớp 2</a>
+            <a href="gvbtt2.html">Giải Vở bài tập Toán 2</a>
+            <a href="gtv2.html">Giải Tiếng Việt lớp 2</a>
+            <a href="gvbttv2.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+            <a href="gta.html">Giải Tiếng Anh lớp 2</a>
+            <a href="gtnxh2.html">Giải Tự nhiên & Xã hội lớp 2</a>
+            <a href="gdd2.html">Giải Đạo Đức lớp 2</a>
+            <a href="gvbtdd2.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+            <a href="gvbthdtn2.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+            <a href="ghdtn2.html">Giải Hoạt động trải nghiệm lớp 2</a>
+            <p>CHÂN TRỜI SÁNG TẠO</p>
+          <a href="gtl2 st.html">Giải Toán lớp 2</a>
+          <a href="gvbtt2 st.html">Giải Vở bài tập Toán 2</a>
+          <a href="gtv2 st.html">Giải Tiếng Việt lớp 2</a>
+          <a href="gvbttv2 st.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+          <a href="gta st.html">Giải Tiếng Anh lớp 2</a>
+          <a href="gtnxh2 st.html">Giải Tự nhiên & Xã hội lớp 2</a>
+          <a href="gdd2 st.html">Giải Đạo Đức lớp 2</a>
+          <a href="gvbtdd2 st.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+          <a href="gvbthdtn2 st.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+          <a href="ghdtn2 st.html">Giải Hoạt động trải nghiệm lớp 2</a>
+          <a href="gan2 st.html">Giải Âm nhạc lớp 2</a>
+       <p>CÁNH DIỀU</p>
+          <a href="gtl2 cd.html">Giải Toán lớp 2</a>
+            <a href="gvbtt2 cd.html">Giải Vở bài tập Toán 2</a>
+            <a href="gtv2 cd.html">Giải Tiếng Việt lớp 2</a>
+            <a href="gvbttv2 cd.html">Giải Vở bài tập Tiếng Việt lớp 2</a>
+            <a href="gta cd.html">Giải Tiếng Anh lớp 2</a>
+            <a href="gtnxh2 cd.html">Giải Tự nhiên & Xã hội lớp 2</a>
+            <a href="gdd2 cd.html">Giải Đạo Đức lớp 2</a>
+            <a href="gvbtdd2 cd.html">Giải Vở bài tập Đạo Đức lớp 2</a>
+            <a href="gvbthdtn2 cd.html">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+            <a href="ghdtn2 cd.html">Giải Hoạt động trải nghiệm lớp 2</a>
+            <a href="gan2 cd.html">Giải Âm nhạc lớp 2</a>
+          </div>
+        </div>
+
+    </div>
+    <script>
+        window.onscroll = function () {
+            // Get the header and side menu elements
+            var header = document.getElementById("header");
+            var sideMenu = document.getElementById("side-menu");
+
+            // Get the distance from the top of the document to the scroll position
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Stick the side menu to the header when scrolling down
+            if (scrollPosition >= 60) {
+                sideMenu.style.top = "0";
+            } else {
+                sideMenu.style.top = "60px";
+            }
+        };
+    </script>
+
+
+
+
+    <my-navbar></my-navbar>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body {
+    display: block;
+  }
+</style>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="../main.js"></script>
+  <script src="../main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lớp 1</title>
+  <style>
+    body {
+      background-color: white;
+      margin: 0;
+    }
+
+    .left_right_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buttonTruoc,
+    .buttonSau {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .buttonLike,
+    .buttonShare {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .like_share_wrapper {
+      display: flex;
+      margin-right: auto;
+      margin-left: -5px;
+    }
+
+    .buttonTruoc {
+      margin-right: 0;
+    }
+
+    .buttonLike {
+      margin-right: 5px;
+    }
+
+    .buttonShare {
+      margin-right: 20px;
+    }
+
+    .bottom_buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom_buttons .buttonTruoc,
+    .bottom_buttons .buttonSau {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .comments {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .comments {
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 50%;
+      margin: auto;
+    }
+
+    input,
+    textarea {
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    label,
+    input,
+    textarea {
+      font-size: 0.8em;
+    }
+
+    button {
+      font-size: 0.8em;
+      padding: 6px 10px;
+    }
+
+    #backToTopBtn {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    #backToTopBtn:hover {
+      background-color: #0056b3;
+    }
+
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .assignment-content {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    .assignment-header {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .assignment-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .assignment-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .assignment-list li:last-child {
+      border-bottom: none;
+    }
+
+    .assignment-list a {
+      text-decoration: none;
+      color: #007bff;
+      display: block;
+    }
+
+    .assignment-list a:hover {
+      text-decoration: underline;
+    }
+
+    .right-sidebar {
+      flex-basis: 250px;
+      height: auto;
+      margin-left: 20px;
+      position: relative;
+      top: unset;
+      bottom: unset;
+      z-index: 1;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #main-content {
+      flex-grow: 1;
+    }
+
+    .right-sidebar {
+      flex-basis: 250px;
+      margin-top: 50px;
+    }
+
+    .right-sidebar .ad-item video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .right-sidebar .ad-item {
+      max-width: 200px;
+      margin: auto;
+    }
+
+    .right-sidebar .ad-item a {
+      text-decoration: none;
+    }
+
+    .right-sidebar .ad-item a {
+      text-decoration: none !important;
+    }
+
+    .comments {
+      width: calc(100% - 40px);
+      max-width: none;
+      margin: 0 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .comments form {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .comments input,
+    .comments textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .content-area ul li {
+      border-bottom: none;
+    }
+
+    .no-border-list li {
+      border-bottom: none;
+    }
+
+    h3 {
+      border-bottom: none;
+    }
+
+    .no-border {
+      border-bottom: none;
+    }
+
+    .no-border-list li {
+      border-bottom: none;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <my-navbar></my-navbar>
+  <button id="backToTopBtn" title="Go to top">↑</button>
+  <script src="../script.js"></script>
+
+  <div id="side-menu">
+    <a class="not-hover_allpage" style="margin-top: -10px;margin-bottom: -10px;">Vở bài tập Tiếng Việt lớp 1 -
+      Kết nối tri thức </a>
+    <a href="gvbtv1.kntt.html">Giải Vở bài tập Tiếng Việt lớp 1 - KNTT</a>
+    <a href="gvbtt1.html">Bài tập Tiếng Việt lớp 1(Buổi học 2)</a>
+    <a href="bttv1_ctst.html">Bài tập Tiếng Việt lớp 1 - CTST</a>
+    <a href="bttv1_cd.html">Bài tập Tiếng Việt lớp 1 - CD</a>
+    <a href="gbtt1_kntt.html">Giải bài tập sgk Toán lớp 1 - KNTT </a>
+    <a href="gvbtt1_kntt.html">Giải Vở bài tập Toán lớp 1 - KNTT</a>
+    <a href="gvbtt1_ctst.html">Giải Vở bài tập Toán lớp 1 - CTST</a>
+    <a href="gbtt1_cd.html">Giải bài tập sgk Toán lớp 1 - CD</a>
+    <a href="gvbtt1_cd.html">Giải Vở bài tập Toán lớp 1 - CD</a>
+  </div>
+
+
+
+  <div class="flex-container">
+    <div id="main-content">
+      <h1>
+        Vở bài tập Toán lớp 1 Kết nối tri thức | Giải vở bài tập Toán lớp 1 (hay nhất)
+      </h1>
+      <hr>
+      <div class="left_right_button">
+        <button class="buttonTruoc">Trang trước</button>
+        <div class="like_share_wrapper">
+          <button class="buttonLike"><i class="fas fa-thumbs-up"></i> Thích</button>
+          <button class="buttonShare"><i class="fab fa-facebook-f"></i> Chia sẻ</button>
+        </div>
+        <button class="buttonSau">Trang sau </button>
+      </div>
+      <hr>
+
+      <div class="content-area">
+        <h1>Danh sách bài tập Toán lớp 1</h1>
+        <ul>
+          <li><strong>Tập 1:</strong> Đang biên soạn</li>
+          <li><strong>Tập 2:</strong>
+            <ol>
+              <li>Bài 21: Số có hai chữ số</li>
+              <li>Bài 22: So sánh số có hai chữ số</li>
+              <li>Bài 23: Bảng các số từ 1 đến 100</li>
+              <li>Bài 24: Luyện tập chung</li>
+              <li>Bài 25: Dài hơn, ngắn hơn</li>
+              <li>Bài 26: Đơn vị độ dài</li>
+              <li>Bài 27: Thực hành ước lượng và đo độ dài</li>
+              <li>Bài 28: Luyện tập chung</li>
+              <li>Bài 29: Phép cộng số có hai chữ số với số có một chữ số</li>
+              <li>Bài 30: Phép cộng số có hai chữ số với số có hai chữ số</li>
+              <li>Bài 32: Phép trừ số có hai chữ số cho số có hai chữ số</li>
+              <li>Bài 33: Luyện tập chung</li>
+              <li>Bài 34: Xem giờ đúng trên đồng hồ</li>
+              <li>Bài 35: Các ngày trong tuần</li>
+              <li>Bài 36: Thực hành xem lịch và giờ</li>
+              <li>Bài 37: Luyện tập chung</li>
+              <li>Bài 38: Ôn tập các số và phép tính trong phạm vi 10</li>
+              <li>Bài 39: Ôn tập các số và phép tính trong phạm vi 100</li>
+              <li>Bài 40: Ôn tập hình học và đo lường</li>
+            </ol>
+          </li>
+        </ul>
+        <div class="video-container">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7wff4L_lhfs"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <div class="comments">
+        <h2>Bình luận</h2>
+        <form id="commentForm">
+          <label for="name">Tên:</label>
+          <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+
+          <label for="phone">SĐT:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+
+          <label for="comment">Bình luận:</label>
+          <textarea id="comment" name="comment" rows="5" placeholder="Nhập bình luận"></textarea>
+
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="right-sidebar">
+      <div class="ad-item">
+        <a href="https://www.facebook.com/clbchiasekienthuc/?locale=vi_VN">"Câu Lạc Bộ Học Thuật: Chia Sẻ Kiến Thức,
+          Nâng Tầm Tương Lai"</a>
+        <video controls autoplay loop muted>
+          <source src="../images/video1.mp4" type="video/mp4">
+
+        </video>
+      </div>
+      <div class="ad-item">
+        <a href="https://tuoitre.vn/3-dot-pha-tri-tue-nhan-tao-dang-so-nhat-nam-2024-20240102090331002.htm">"Trí Tuệ Tập
+          Thể: Khám Phá, Học Hỏi và Tạo Đột Phá"
+        </a>
+
+        <video controls autoplay loop muted>
+          <source src="../images/video2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="ad-item">
+        <a href="https://pace.edu.vn/tin-kho-tri-thuc/ky-nang-lam-viec-nhom">KỸ NĂNG LÀM VIỆC NHÓM LÀ GÌ? CÁCH LÀM VIỆC
+          NHÓM HIỆU QUẢ
+        </a>
+
+        <video controls autoplay loop muted>
+          <source src="../images/video3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var comment = document.getElementById('comment').value;
+
+      // Kiểm tra cú pháp email hợp lệ bằng Regular Expression
+      function validateEmail(email) {
+        var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      // Kiểm tra tên miền phổ biến (đây chỉ là ví dụ đơn giản, thực tế không nên cứng cố định danh sách)
+      function validateDomain(email) {
+        var domain = email.split('@')[1];
+        var popularDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com'];
+        return popularDomains.includes(domain);
+      }
+
+      if (!validateEmail(email)) {
+        alert('Địa chỉ email không hợp lệ. Vui lòng kiểm tra lại.');
+        return;
+      }
+
+      if (!validateDomain(email)) {
+        alert('Tên miền email không phải là tên miền phổ biến. Vui lòng kiểm tra lại.');
+        return;
+      }
+
+      // Tiếp tục với việc gửi thông tin form nếu tất cả kiểm tra hợp lệ
+      var mailtoLink = 'mailto:22130116@st.hcmuaf.edu.vn?subject=Comment Submission&body=';
+      mailtoLink += 'Name: ' + name + '%0A';
+      mailtoLink += 'Email: ' + email + '%0A';
+      mailtoLink += 'Phone: ' + phone + '%0A';
+      mailtoLink += 'Comment: ' + comment;
+
+      window.location.href = mailtoLink;
+    });
+
+  </script>
+</body>
+
+</html>

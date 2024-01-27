@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 1</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="container">
+        <div id="side-menu">
+            <a href="gtv5.html">Giải Tiếng Việt lớp 5</a>
+            <a href="gvbttv5.html">Giải Vở bài tập Tiếng Việt 5</a>
+            <a href="vm5.html">Văn mẫu lớp 5</a>
+            <a href="gt5.html">Giải Toán lớp 5</a>
+        
+            <a href="gvbtt5.html">Giải Vở bài tập Toán 5</a>
+            <a href="gta5.html">Giải Tiếng Anh lóp 5</a>
+            <a href="gkh5.html">Giải Khoa học 5</a>
+            <a href="gls5.html">Giải Lịch Sử 5</a>
+       
+            <a href="gdl5.html">Giải Địa Lí 5</a>
+            <a href="gdd5.html">Giải Đạo Đức 5</a>
+            <a href="gth5.html">Giải Tin Học 5</a>
+           
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () {
+            // Get the header and side menu elements
+            var header = document.getElementById("header");
+            var sideMenu = document.getElementById("side-menu");
+
+            // Get the distance from the top of the document to the scroll position
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Stick the side menu to the header when scrolling down
+            if (scrollPosition >= 60) {
+                sideMenu.style.top = "0";
+            } else {
+                sideMenu.style.top = "60px";
+            }
+        };
+    </script>
+
+
+
+
+    <my-navbar></my-navbar>
